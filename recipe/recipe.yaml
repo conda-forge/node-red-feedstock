@@ -13,7 +13,7 @@ source:
     sha256: bf4e7a0ae54720f6c58580a0743dc6d456fcf7366c18e99feae397f566964381
 
 build:
-  number: 0
+  number: 1
   script: build.nu
   # noarch: generic # has binaries on macos, so not 'noarch'
 
