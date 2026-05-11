@@ -21,6 +21,10 @@ def main [] {
         ^ln -s $build_node_path $node_path
     }
 
+    # Use a clean, isolated npm cache to avoid EOF errors from stale/shared cache on macOS CI
+    let npm_cache = $env.SRC_DIR | path join ".npm-cache"
+    $env.npm_config_cache = $npm_cache
+
     # Create package archive
     ^npm pack --ignore-scripts
 
