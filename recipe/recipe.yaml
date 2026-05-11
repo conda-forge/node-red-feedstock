@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.1.8"
+  version: "4.1.10"
 
 package:
   name: node-red
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://registry.npmjs.org/node-red/-/node-red-${{ version }}.tgz
-    sha256: b7e1cf516894553232ad0d4513909d0620a6d57211a485948237b4772db461fe
+    sha256: a91656cb5c97b98655540e0d557aeebbfad9a2134ac48c9d47eb3798803ae3d1
 
 build:
   number: 0
