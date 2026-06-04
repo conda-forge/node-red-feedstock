@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.1.10"
+  version: "4.1.11"
 
 package:
   name: node-red
@@ -10,10 +10,10 @@ package:
 
 source:
   - url: https://registry.npmjs.org/node-red/-/node-red-${{ version }}.tgz
-    sha256: a91656cb5c97b98655540e0d557aeebbfad9a2134ac48c9d47eb3798803ae3d1
+    sha256: 3fe4c5de7c3bf90b8faeb7d4692b877f7d4515cd21a81cb0ce5a310e27afa6fa
 
 build:
-  number: 1
+  number: 0
   script: build.nu
   # noarch: generic # has binaries on macos, so not 'noarch'
 
